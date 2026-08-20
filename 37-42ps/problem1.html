@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: brown;
+            padding-bottom: 40px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: aqua;
+            color: white;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav-links a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 8px;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card button {
+            align-self: flex-start;
+            padding: 8px 16px;
+            background-color: lightblue;
+            color: darkblue;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Dashboard</div>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </nav>
+    <div class="grid-container">
+        <div class="card">
+            <div>
+                <h2>CSS grid</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, repellendus!</p>
+            </div>
+            <button>View Details</button>
+        </div>
+
+        <div class="card">
+            <div>
+                <h2>CSS grid</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, repellendus!</p>
+            </div>
+            <button>View Details</button>
+        </div>
+
+        <div class="card">
+            <div>
+                <h2>CSS grid</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, repellendus!</p>
+            </div>
+            <button>View Details</button>
+        </div>
+    </div>
+</body>
+
+</html>

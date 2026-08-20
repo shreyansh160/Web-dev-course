@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            padding: 40px 20px;
+        }
+
+        .progress-bar {
+            height: 5px;
+            background-color: brown;
+            position: fixed;
+            top: 0;
+            left: 0;
+            animation: loadprogress 3s ease-in-out forwards;
+        }
+
+        @keyframes loadprogress {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress-bar"></div>
+    <h1>Page content</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic blanditiis vero autem consequatur voluptatum
+        tenetur fugit optio perferendis doloribus excepturi.</p>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="post">
+        <div>
+            <label id="fullname">Enter your fullname</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your fullname">
+        </div>
+
+        <div>
+            <label for="email">Enter your email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+
+        <div>
+            <label for="Phone">Enter your phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+        </div>
+
+        <div>
+            <label for="experience">Enter your years of experience</label>
+            <input type="number" id="experience" name="experience" placeholder="Enter your years of experience">
+        </div>
+
+        <div>
+            <label for="Role">Select your role:</label>
+            <select name="role">
+                <option value="Frontend Developer">Frontend Developer</option>
+                <option value="Backend Developer">Backend Developer</option>
+                <option value="Full Stack Developer">Full Stack Developer</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="workmode"> workmode:</label>
+            <br>
+            <input type="radio" id="On-site" name="workmode" value="On-site">
+            <label for="On-site">On-site</label>
+        </div>
+
+        <div>
+            <input type="radio" id="Hybrid" name="workmode" value="Hybrid">
+            <label for="Hybrid">Hybrid</label>
+        </div>
+
+        <div>
+            <input type="radio" id="Remote" name="workmode" value="Remote">
+            <label for="Remote">Remote</label>
+        </div>
+        <br>
+        <div>
+            <label for="Skills known">Skills known:</label>
+            <br>
+            <input type="checkbox" id="HTML" name="HTML" value="yes">
+            <label for="HTML">HTML</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="CSS" name="CSS" value="yes">
+            <label for="CSS">CSS</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="JS" name="JS" value="yes">
+            <label for="JS">JS</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="React" name="React" value="yes">
+            <label for="React">React</label>
+        </div>
+        <br>
+        <div>
+            <label for="comment">Why should we hire you:</label>
+            <br>
+            <textarea id="comment" name="comment" rows="4" cols="40"></textarea>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

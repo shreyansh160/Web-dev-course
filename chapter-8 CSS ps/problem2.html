@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            padding: 40px 20px;
+        }
+
+        .progress-container{
+            width: 100%;
+            max-width: 600px;
+            height: 8px;
+            background-color: aqua;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+
+        .progressbar {
+            height: 100%;
+            width: 0%;
+            background-color: brown;
+            transition: width 2s ease-in-out;
+        }
+
+        .progress-container:hover .progressbar{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, adipisci.</h2>
+    <div class="progress-container">
+        <div class="progressbar"></div>
+    </div>
+</body>
+
+</html>

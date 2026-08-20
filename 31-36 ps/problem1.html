@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main-container {
+            overflow: hidden;
+        }
+
+        .content {
+            width: 70%;
+            float: left;
+            background-color: #f0f4f8;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .sidebar {
+            width: 30%;
+            float: right;
+             background-color: #e2e8f0;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            clear: both;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        @media only screen and (max-width:768px){
+            .content{
+                width: 100%;
+                float: none;
+            }
+            .sidebar{
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <article class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum fugiat alias quidem iusto voluptatum ea,
+                nostrum unde facere quos odit!</p>
+        </article>
+        <aside class="sidebar">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tempore laboriosam et rem optio reiciendis
+                cupiditate, soluta doloribus ad dolorem!</p>
+        </aside>
+    </div>
+    <footer>
+        All rights reserved &copy;2026
+    </footer>
+</body>
+
+</html>
