@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .bulb {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: #444;
+      transition: all 0.3s ease;
+    }
+    .glow {
+      background-color: #fffb00;
+      box-shadow: 0 0 30px #fffb00, 0 0 60px #fffb00;
+    }
+  </style>
+</head>
+<body>
+  <div id="bulb" class="bulb"></div>
+  <script>
+    let bulb = document.getElementById("bulb");
+    setInterval(() => {
+      bulb.classList.toggle("glow");
+    }, 400);
+  </script>
+</body>
+</html>
