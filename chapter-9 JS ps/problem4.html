@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const rejectAfter3Sec = () => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    reject(new Error("Promise was rejected after 3 seconds!"));
+                }, 3000);
+            });
+        };
+        const handlePromise = async () => {
+            try {
+                let result = await rejectAfter3Sec();
+                console.log(result);
+            } catch (error) {
+                console.log("Caught the error successfully:");
+                console.error(error.message);
+            }
+        };
+        handlePromise();
+    </script>
+</body>
+</html>
