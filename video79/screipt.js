@@ -1,7 +1,7 @@
 let a = prompt("Enter first number")
 let b = prompt("Enter second number")
 if(isNaN(a) || isNaN(b)){
-    throw SyntaxError("Sorrry this is not allowed")
+    throw SyntaxError("Sorry this is not allowed")
 }
 let sum =parseInt(a)+parseInt(b)
 
